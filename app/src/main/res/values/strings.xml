@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QuestionAnswersApp</string>
+    <string name="first_year">First Year</string>
+    <string name="electronics_and_communication">Electronics and Communication</string>
+    <string name="computer_science">Computer Science</string>
+    <string name="electrical">Electrical</string>
+    <string name="mechanical">Mechanical</string>
+    <string name="civil">Civil</string>
+    <string name="information_science">Information Science</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chinmay.students.questionanswersapp.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstYear"
+        android:onClick="departmentSelection"
+        android:text="@string/first_year"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/electronicsAndCommunication"
+        android:onClick="departmentSelection"
+        android:text="@string/electronics_and_communication"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/computerScience"
+        android:onClick="departmentSelection"
+        android:text="@string/computer_science"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/informationScience"
+        android:onClick="departmentSelection"
+        android:text="@string/information_science"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/electrical"
+        android:onClick="departmentSelection"
+        android:text="@string/electrical"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mechanical"
+        android:onClick="departmentSelection"
+        android:text="@string/mechanical"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/civil"
+        android:onClick="departmentSelection"
+        android:text="@string/civil"/>
+
+</LinearLayout>

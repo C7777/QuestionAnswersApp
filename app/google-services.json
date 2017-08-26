@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "490650422380",
+    "firebase_url": "https://questionanswersapp-b2da5.firebaseio.com",
+    "project_id": "questionanswersapp-b2da5",
+    "storage_bucket": "questionanswersapp-b2da5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490650422380:android:20946ef66d9e4828",
+        "android_client_info": {
+          "package_name": "com.chinmay.students.questionanswersapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490650422380-rsf30pis8ur95rj7ure1avgm27f4ebvt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chinmay.students.questionanswersapp",
+            "certificate_hash": "bbc9cac1192a52172aa0340646f551286b1d0f84"
+          }
+        },
+        {
+          "client_id": "490650422380-i3ircoahvkjmflc58r2vh7a1psjgo10q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr5EfyMp1g9xLxiA8eY_uj7e4Z4VocXwI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490650422380-i3ircoahvkjmflc58r2vh7a1psjgo10q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
