@@ -4,21 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context="com.chinmay.students.questionanswersapp.SecondActivity">
+    android:background="#FFF1060E"
+    tools:context="com.chinmay.students.questionanswersapp.YearActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="30sp"
+        android:textColor="#a8f403"
+        android:background="#FFF9373D"
+        android:layout_marginBottom="5dp"
         android:id="@+id/yearText"/>
 
     <ImageButton
         android:id="@+id/yearSelect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:src="@drawable/ic_action_name"
+        android:layout_alignEnd="@+id/yearText"
         android:clickable="true"
-        android:foreground="?attr/selectableItemBackground" />
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/yearText" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/yearRecyclerView"

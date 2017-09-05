@@ -43,7 +43,7 @@ class YearListAdapter extends RecyclerView.Adapter<YearListAdapter.YearViewHolde
     @Override
     public YearViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.activity_second, parent, false);
+                .inflate(R.layout.activity_year, parent, false);
 
         Log.e(TAG,"Layout is set");
         return new YearViewHolder(view);
@@ -55,7 +55,6 @@ class YearListAdapter extends RecyclerView.Adapter<YearListAdapter.YearViewHolde
         Log.e(TAG,"onBindViewHolder is called");
         QuestionPaper yearQuestionPaper = yearList.get(position);
         holder.yearText.setText(yearQuestionPaper.getYear());
-        holder.yearSelectImageButton.setImageResource(R.drawable.ic_action_name);
 
         holder.yearSelectImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,7 +64,7 @@ class YearListAdapter extends RecyclerView.Adapter<YearListAdapter.YearViewHolde
                 String yearSelected = selectedQuestionPaper.getYear();
                 Log.e(TAG, "Year is "+yearSelected);
 
-                ((SecondActivity)context).displaySubjects(yearSelected);
+                ((YearActivity)context).displaySubjects(yearSelected);
             }
         });
         Log.e(TAG,"Year is displayed");

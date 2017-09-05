@@ -7,4 +7,5 @@
     <string name="mechanical">Mechanical</string>
     <string name="civil">Civil</string>
     <string name="information_science">Information Science</string>
+    <string name="select_your_department">Select your department</string>
 </resources>

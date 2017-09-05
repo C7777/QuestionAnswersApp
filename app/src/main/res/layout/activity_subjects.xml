@@ -3,21 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context="com.chinmay.students.questionanswersapp.SecondActivity">
+    android:layout_height="match_parent"
+    android:background="#FFF1060E"
+    tools:context="com.chinmay.students.questionanswersapp.YearActivity">
 
-    <TextView
+
+    <ExpandableListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:id="@+id/subjectText"/>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/subjectRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical">
-
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent"
+        android:id="@+id/expandableListView"/>
 
 </RelativeLayout>

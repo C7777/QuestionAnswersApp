@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -15,13 +14,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class SecondActivity extends AppCompatActivity {
+public class YearActivity extends AppCompatActivity {
 
-    private static final String TAG = "SecondActivity";
+    private static final String TAG = "YearActivity";
 
     String departmentName;
     QuestionPaper questionPaper;
@@ -34,11 +31,12 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_year);
 
         Intent departmentNameIntent=getIntent();
         departmentName = departmentNameIntent.getStringExtra("departmentName");
         Log.e(TAG, "Department name is "+ this.departmentName);
+        getSupportActionBar().setTitle(departmentName);
 
         yearRecyclerView = (RecyclerView)findViewById(R.id.yearRecyclerView);
         yearLayoutManager = new LinearLayoutManager(this);
@@ -62,7 +60,7 @@ public class SecondActivity extends AppCompatActivity {
                     yearList.add(questionPaper);
                     String year=questionPaper.getYear();
                     Log.e(TAG,"Year is "+year);
-                    yearListAdapter = new YearListAdapter(SecondActivity.this, yearList);
+                    yearListAdapter = new YearListAdapter(YearActivity.this, yearList);
                     yearListAdapter.notifyDataSetChanged();
                     yearRecyclerView.setAdapter(yearListAdapter);
                     Log.e(TAG,"setAdapter called ");
@@ -83,7 +81,7 @@ public class SecondActivity extends AppCompatActivity {
     public void displaySubjects(String yearSelected) {
 
         String selectedYear=yearSelected;
-        Intent departmentAndYearIntent=new Intent(SecondActivity.this,SubjectsActivity.class);
+        Intent departmentAndYearIntent=new Intent(YearActivity.this,SubjectsActivity.class);
         departmentAndYearIntent.putExtra("departmentName", departmentName);
         departmentAndYearIntent.putExtra("selectedYear", selectedYear);
         startActivity(departmentAndYearIntent);
